@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+<body>
+    Bem vindo!
+    <br><br>
+    <h2>Todas contas cadastradas no sistema: </h2>
+    <ul>
+        <% contas.forEach(element => { %>
+            <li>
+                Login: <%= element.login %>
+                <br>
+                Senha: <%= element.senha %>    
+            </li>
+            <br><br>
+        <% }); %>
+    </ul>
+</body>
+</html>
